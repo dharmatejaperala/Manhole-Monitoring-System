@@ -1,0 +1,183 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+nav {
+    background-color:  rgb(245, 229, 220);
+    padding: 10px;
+    display: flex;
+    padding-left: 50px;
+    word-spacing: 50px;
+    text-align: justify;
+}
+
+.list{
+    list-style:none;
+    display: flex;
+    gap: 25px;
+
+}
+input[type="text"]{
+    margin:4px;
+    width: 50%;
+    border-radius: 6px;
+    padding: 4px;
+    font-size: 15px;
+}
+nav a{
+    padding :4px;
+    padding-left: 6px;
+    padding-right: 6px;
+    text-decoration: none;
+    font-size: 20px;
+    color: rgba(38, 0, 255, 0.698);
+}
+nav a:hover{
+    color: black;
+    background-color: aliceblue;
+    border-radius: 5px;
+    /* background-color: transparent; */
+}
+
+.Home p{
+    text-align:justify;
+    font-size: 18px;
+    width: 50%;
+    margin: 50px;
+}
+.About1{
+    padding: 10px;
+    margin: 40px;
+    
+    border-radius: 10px;
+    text-align: center;
+    font-size: 25px;
+
+    background-color: aquamarine;
+
+}
+.About1-0{
+    /* border: 1px solid black; */
+    height: 200px;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 40px;
+    font-size: 30px;
+    text-align: center;
+}
+
+/* Styling Status site */
+
+.status-table{
+    border-collapse: collapse;
+   
+   font-size: 1em;
+   min-width: 60%;
+   max-width: 60%;
+   margin-left: 20%;
+   margin-right: 20%;
+   
+}
+.status-table thead tr{
+    padding-top: 40px;
+    background-color:rgb(250, 193, 107);
+    color:black;
+    text-align: left;
+    font-weight: bold;
+}
+.status-table th,
+.status-table td{
+    padding:12px 15px;
+}
+.status-table tbody tr{
+    border-bottom: 1px solid #dddddd;
+}
+.status-table tbody tr:nth-of-type(even){
+    background-color:rgba(255, 235, 205, 0.455);
+}
+
+
+/* styling report page */
+.comment{
+    margin: 50px 50px 20px 250px;
+    text-decoration: none;
+    font-size: 20px;
+}
+textarea{
+    border-radius: 8px;
+    width: 50%;
+}
+button[type="submit"]{
+    width: 100px;
+    background-color:antiquewhite;
+    border-radius: 5px;
+    border-color: blueviolet;
+    cursor:pointer;
+}
+
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    /* border-bottom: 1px dotted black; If you want dots under the hoverable text */
+  }
+  
+  /* Tooltip text */
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 150px;
+    background-color: black;
+    color: white;
+    font-weight: 600;
+    text-align: center;
+    padding: 5px ;
+    border-radius: 8px;
+   
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    /* z-index: 30; */
+  }
+  
+  /* Show the tooltip text when you mouse over the tooltip container */
+  .tooltip:hover{
+    cursor: pointer;
+  }
+  .tooltip:hover .tooltiptext {
+    cursor: pointer;
+    visibility: visible;
+  }
+.contact{
+    text-align: center; 
+    padding: 5px;
+    width:100%;
+    background-color: #ffffff;
+    border-top: 1px solid bisque;
+    height: 50px;
+    /* position: fixed; 
+    bottom:60px;
+    background: transparent; */
+}
+.footer {
+    text-align: center;
+    /* position:fixed;
+    bottom: 0px; */
+    /* bottom:0px; */
+    width:100%;
+    height:60px;  /*Height of the footer */
+    background:#6cf;
+ }
+
+ 
+/* Media queries */
+@media only screen and (max-width:600px){
+    .list{
+        width: 100%;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+  
